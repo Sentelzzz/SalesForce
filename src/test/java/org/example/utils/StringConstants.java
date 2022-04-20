@@ -5,6 +5,7 @@ public class StringConstants {
     //url
     public static final String LOG_IN_URL = "https://login.salesforce.com/";
     public static final String CREATE_NEW_ACCOUNT_URL = "https://d8d000004gsn1eac.lightning.force.com/lightning/o/Account/new";
+    public static final String CREATE_NEW_CONTACT_URL = "https://d8d000004gsn1eac.lightning.force.com/lightning/o/Contact/new";
 
     //login and password
     public static final String USERNAME = "vhqcusk-2f2q@force.com";
