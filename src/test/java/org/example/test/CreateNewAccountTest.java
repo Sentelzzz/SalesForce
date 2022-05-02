@@ -19,6 +19,7 @@ public class CreateNewAccountTest extends BaseTest{
         newAccountPageService.createNewAccount();
         String actualNameCreatedAccount = newAccountPageService.getTextNameCreatedAccount();
         String expectedNameCreatedAccount = newAccountPageService.getAccountName();
+        System.out.println("Hello World!");
         Assert.assertTrue(actualNameCreatedAccount.contains(expectedNameCreatedAccount), "New account didn't created!");
     }
 }
