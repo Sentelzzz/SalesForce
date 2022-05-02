@@ -14,7 +14,7 @@ public class CreateNewAccountTest extends BaseTest{
         newAccountPageService = new NewAccountPageService();
     }
 
-    @Test
+    @Test (description = "Creating new Account")
     public void createNewAccountTest() {
         newAccountPageService.createNewAccount();
         String actualNameCreatedAccount = newAccountPageService.getTextNameCreatedAccount();

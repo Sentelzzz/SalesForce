@@ -14,7 +14,7 @@ public class CreateNewContactTest extends BaseTest{
         newContactPageService = new NewContactPageService();
     }
 
-    @Test
+    @Test (description = "Creating new Contact")
     public void createNewContactPageTest() {
         newContactPageService.createNewContact();
         String actualNewContact = newContactPageService.getTextActualCreatedContact();

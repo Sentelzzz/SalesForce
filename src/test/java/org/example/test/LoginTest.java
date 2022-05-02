@@ -1,5 +1,6 @@
 package org.example.test;
 
+import io.qameta.allure.Description;
 import org.example.page.MainPage;
 import org.example.service.LoginPageService;
 import org.testng.Assert;
@@ -15,7 +16,8 @@ public class LoginTest extends BaseTest{
         loginPageService = new LoginPageService();
     }
 
-    @Test
+    @Test (description = "Login")
+    @Description ("Fill all fields on page and login")
     public void loginTest() {
         MainPage mainPage = loginPageService.login();
         String actualNameOfMainPage = mainPage.getNameOfIndicatorOfMainPage();
